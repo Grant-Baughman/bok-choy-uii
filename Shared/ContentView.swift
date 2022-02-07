@@ -33,7 +33,12 @@ struct ContentView: View {
         VStack{
             Text("You change views with data")
             Button("change color"){
-                self.circleColor = Color.green
+                if circleColor == Color.red {
+                    self.circleColor = Color.blue
+                } else if circleColor == Color.blue {
+                    self.circleColor = Color.green                }else if circleColor == Color.green {
+                        self.circleColor = Color.red                }
+                
             }
             Circle()
                 .foregroundColor( circleColor )
