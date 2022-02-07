@@ -29,7 +29,7 @@ struct ContentView: View {
         }
             .font(.title)
         }
-        
+        // button
         VStack{
             Text("You change views with data")
             Button("change color"){
